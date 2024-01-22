@@ -1,7 +1,7 @@
 require('dotenv').config()    //to import dotenv
 const express = require("express")
 const mongoose= require("mongoose")
-const users = require("./src/models/users")
+
 const { register, login, findUser } = require("./src/Controllers/auth")
 const cors = require("cors")
 const { verifyToken, validateForm, isValidated } = require("./src/Middlewares")
